@@ -1,11 +1,11 @@
 # main links
 main:
-  - title: "Minimal Mistakes tutorial"
-    url: https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/
+  - title: "Don't click this bottom"
+    url: /I-have-told-you-not-to-click-this-button/
+  - title: "categories"
+    url: /categories/
   - title: "About"
-    url: /about
-  # - title: "Sample Posts"
-  #   url: /year-archive/
+    url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "Sitemap"
