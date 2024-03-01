@@ -18,29 +18,40 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Yohe 的個人網站/部落格
-subtitle: enjoying college life~
-email: j00968361@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  這裡是yohe的個人網站
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
-github: [metadata]
-logo: "/assets/images/yohelogo.png"
-
 # Build settings
 remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
-minimal_mistakes_skin: "dark"
+minimal_mistakes_skin: "aqua"
+
+locale      : "zh-TW"
+title       : yohe 的個人網站/blog
+subtitle    : enjoying college life~
+name        : "yohe"
+email       : j00968361@gmail.com
+description : >- # this means to ignore newlines until "baseurl:"
+  這裡是yohe的個人網站
+baseurl     : "" # the subpath of your site, e.g. /blog
+url         : "" # the base hostname & protocol for your site, e.g. http://example.com
+github: [metadata]
+logo: "/assets/images/yohelogo.png"
+words_per_minute : 200
+
 author:
   name: "yohe"
-  avatar: "/assets/images/frien.jpg"
+  avatar: "/assets/images/anyasmile.gif"
   bio: "study in NTU csie" # Note: Markdown is allowed
-  location: "Taiwan"
+  location: "Taipei or Chunghua, Taiwan"
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yohe-tw"
+footer:
+  links:
+    - label: "GitHub"
+      icon: "fab fa-fw fa-github"
+      url: "https://github.com/yohe-tw"
 
 defaults:
   # _posts
@@ -62,22 +73,6 @@ defaults:
       layout: single
       author_profile: true
 
-# Exclude from processing.
-# The following items will not be processed, by default.
-# Any item listed under the `exclude:` key here will be automatically added to
-# the internal "default list".
-#
-# Excluded items can be processed by explicitly listing the directories or
-# their entries' file path in the `include:` list.
-#
-# exclude:
-#   - .sass-cache/
-#   - .jekyll-cache/
-#   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules/
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+include: ["_pages"]
+
+
