@@ -191,8 +191,29 @@ defaults:
       path: ""
     values:
       sidebar:
-        - image: <your image url>
+        - text: <\html copy from previous>
 {% endhighlight %}
+
+#### 3. 設定手機閱讀樣式
+![](/assets/images/uglyflagcounter.png){: .align-center}
+雖然我們設定好了，但是在手機模式下仍然會變得相當醜，如上圖，因此我們要手動將這個計數器在手機模式時關掉。
+首先把原本網站copy的html裡面加上一個類別：
+{% highlight html %}
+<a class='author__flagcounter'></a>
+{% endhighlight %}
+這個類別的名稱是我自訂的。接著打開_sidebar.scss檔，在最下面加上
+{% highlight css %}
+/*
+    flag__counter
+    ========================== */
+
+.author__flagcounter{
+  @media screen and (max-width:$large){
+    display:none
+  }
+}
+{% endhighlight %}
+這樣就可以讓計數器在手機模式時消失了。
 
 ## reference
 1. [用 Jekyll 和 Github Page 來架設靜態 Markdown 部落格](https://medium.com/@starshunter/%E7%94%A8-jekyll-%E5%92%8C-github-page-%E4%BE%86%E6%9E%B6%E8%A8%AD%E9%9D%9C%E6%85%8B-markdown-%E9%83%A8%E8%90%BD%E6%A0%BC-fcaa288d4dd7)

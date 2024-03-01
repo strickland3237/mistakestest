@@ -351,3 +351,12 @@
   }
 }
 
+/*
+    flag__counter
+    ========================== */
+
+.author__flagcounter{
+  @media screen and (max-width:$large){
+    display:none
+  }
+}
