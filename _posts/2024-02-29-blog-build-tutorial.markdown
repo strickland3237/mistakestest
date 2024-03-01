@@ -215,6 +215,9 @@ defaults:
 }
 {% endhighlight %}
 這樣就可以讓計數器在手機模式時消失了。
+### 加上favicon
+到[這個網站](https://realfavicongenerator.net/)將想做的圖片丟進去，之後按照上面的步驟應該會有一個favicon包與一串html程式碼。
+將這些程式碼丟到`_includes/head/custom.html`並將圖片放在合適的位置即可。
 
 ## reference
 1. [用 Jekyll 和 Github Page 來架設靜態 Markdown 部落格](https://medium.com/@starshunter/%E7%94%A8-jekyll-%E5%92%8C-github-page-%E4%BE%86%E6%9E%B6%E8%A8%AD%E9%9D%9C%E6%85%8B-markdown-%E9%83%A8%E8%90%BD%E6%A0%BC-fcaa288d4dd7)
