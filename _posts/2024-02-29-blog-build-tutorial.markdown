@@ -208,8 +208,9 @@ defaults:
     ========================== */
 
 .author__flagcounter{
-  @media screen and (max-width:$large){
-    display:none
+  display:none;
+  @include breakpoint($large){
+    display:block
   }
 }
 {% endhighlight %}
