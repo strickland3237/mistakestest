@@ -47,16 +47,25 @@ Jekyll是基於Ruby的模板來產生靜態網頁的產生器，並且是github 
 ### 創立github repository
 
 首先我們第一步當然是先創立一個專屬於我們網站的專案拉！將這個repository的名字設為`<name>.github.io`，其中name是你的github帳號名稱。然後先放著！不要動！先來設定我們最複雜的地方：電腦環境設定。
+
 ### Jekyll電腦環境設定
 
 由於我們希望能同時在本地端與遠端跑起來，這樣我們就不用每次修改一個小小的地方就要push上github，因此接下來的步驟就是將電腦的環境設好，使我們可以自然的在本地端電腦上跑Jekyll。要使Jekyll跑起來我們必須要先安裝好ruby與rubygems，後者為ruby的管理套件，在這個基礎上再安裝完gcc和g++以及make後就可以在電腦上順利安裝Jekyll了。以下為安裝詳細步驟：
+
 #### 1. 安裝Ruby
+
 到[Ruby的官網](https://www.ruby-lang.org/en/downloads/)安裝 ruby，記得要選擇有Devkit，這樣以後才不會遇到問題。筆者就是沒有裝有Devkit的版本結果遇到問題...。並且在安裝的最後會跳出一個cmd，選擇選項3安裝即可。
+
 #### 2. 安裝RubyGems
+
 到[RubyGems的官網](https://rubygems.org/pages/download#formats)照著官網的說明安裝。
+
 #### 3. 安裝gcc、g+\+與cmake
+
 這步算是安裝過程中最難的一塊，因為對於windows用戶而言，本身沒有這三個東西(相比類unix系統)，安裝的軟體又不會幫忙設定系統環境變數。對於gcc與g+\+的安裝教學請出我[大一的計程教授P教授教學網站](https://sites.google.com/site/mycprogrammingbook/bu-chong-cai-liao/gccanzhuang)來代為指導。另外[make for windows](https://gnuwin32.sourceforge.net/packages/make.htm)的網站在這裡，安裝後如果打`make -v`沒有反應代表需要設定環境變數，設定環境變數的部分跟前面[大一的計程教授P教授教學網站](https://sites.google.com/site/mycprogrammingbook/bu-chong-cai-liao/gccanzhuang)講的一樣，只是要注意是不同的path，為`C:\Program Files (x86)\GnuWin32\bin`(每台電腦不太一樣)。
+
 #### 4. 檢查是否安裝成功
+
 輸入以下指令，若皆跳版本號，代表安裝成功。  
 {% highlight bash %}
 ruby -v
@@ -67,35 +76,83 @@ make -v
 {% endhighlight %}
 
 #### 5. 使用下面的指令來安裝Jekyll與bundler，可能會花億點點時間。
+
 {% highlight bash %}
 gem install jekyll bundler
 {% endhighlight %}
 好的，環境都設好了！接下來嘗試是否能在本地端把網頁跑起來。
 
 ### 在本地端將網頁跑起來
+
 接下來我們要嘗試在本地用jekyll將repo初始化，並嘗試在本地把網頁跑起來。
-1. 將之前創好的repo clone下來
-2. 在這個repo裡輸入指令`jekyll new .`，使jekyll幫你初始化成它的形狀。
-3. 輸入`bundle install`來安裝需要的套件
-4. 輸入`bundle exec jekyll serve`嘗試在本地跑起網頁，在瀏覽器輸入`localhost:4000`，如果順利的話應該就會在瀏覽器裡看到一個非常陽春的網頁。
+
+#### 1. 下載repo
+
+將之前創好的repo clone下來
+
+#### 2. 初始化repo
+
+在這個repo裡輸入以下指令，使jekyll幫你初始化成它的形狀。
+{% highlight bash %}
+jekyll new .
+{% endhighlight %}
+
+#### 3. 安裝套件
+
+輸入以下指令來安裝需要的套件
+{% highlight bash %}
+bundle install
+{% endhighlight %}
+
+#### 4. 在本地端跑起網頁
+
+輸入
+{% highlight bash %}
+bundle exec jekyll serve
+{% endhighlight %}
+嘗試在本地跑起網頁，並在瀏覽器輸入
+{% highlight bash %}
+localhost:4000
+{% endhighlight %}
+如果順利的話應該就會在瀏覽器裡看到一個非常陽春的網頁。
 
 ### 加入minimal-mistakes主題
 
 有了jekyll還不夠，jekyll只是一個網站產生器，我們選用jekyll的原因是因為其中有一個超棒的主題：minimal-mistakes。這個主題簡潔、在github page社群有廣大的使用者使用它，因此我們將主要使用minimal-mistakes進行主題布置。由於之前已經架好了jekyll了，所以我們將用remote theme的方式將minimal-mistakes加入主題。
+
 #### 1. 替換Gemfile
+
 用記事本(強者都用記事本打code)或是vscode之類的編輯器打開**Gemfile**，將裡面的內容全部換成以下的程式碼打掉重練：
 {% highlight ruby %}
 source "https://rubygems.org"
 gem "github-pages", group: :jekyll_plugins
 gem "jekyll-include-cache", group: :jekyll_plugins
 {% endhighlight %}
+
 #### 2. 修改_config.yml
-打開_config.yml，在開頭為plugins的那一行下方加入`jekyll-include-cache`。
-#### 3. 輸入`bundle install`來安裝需要的套件
+
+打開_config.yml，在開頭為plugins的那一行下方加入
+{% highlight ruby %}
+jekyll-include-cache
+{% endhighlight %}
+
+#### 3. 安裝套件
+
+輸入以下指令來安裝需要的套件
+{% highlight bash %}
+bundle install
+{% endhighlight %}
+
 #### 4. 修改_config.yml
-打開_config.yml並刪除開頭為 theme 或 remote-theme 的欄位，並將 `remote_theme: "mmistakes/minimal-mistakes@4.24.0"` 加入此檔案。
+
+打開_config.yml並刪除開頭為 theme 或 remote-theme 的欄位，並將
+{% highlight ruby %}
+remote_theme: "mmistakes/minimal-mistakes@4.24.0"
+{% endhighlight %}
+加入此檔案。
 
 #### 5. 複製minimal-mistakes的檔案
+
 到minimal-mistakes的[github頁面](https://github.com/mmistakes/minimal-mistakes)把它通通clone下來，將以下的5個資料夾複製到自己的repo裡面。
 {% highlight bash %}
 _data
@@ -110,6 +167,8 @@ assets
 bundle add webrick
 bundle add wdm
 {% endhighlight %}
+#### 7. 遠端部屬(deploy)
+將完成的repo推上去github，並在<your name>.github.io查看是否有成功運行
 
 ## 後續處理
 
@@ -119,6 +178,21 @@ bundle add wdm
 
 ### _variable.scss 環境變數設定
 - $xlarge: 由於我的電腦螢幕較寬，因此將此參數從1280px調到1440px比較舒服
+
+### 加上計算各國來訪人數計數器
+
+#### 1. 創建計數器
+到[flagcounter網站](https://flagcounter.com/)客製化自己的計數器並取得圖片網址
+#### 2. 連結網站
+打開_config.yml並在defaults的地方加上以下程式碼
+{% highlight ruby %}
+defaults:
+  - scope:
+      path: ""
+    values:
+      sidebar:
+        - image: <your image url>
+{% endhighlight %}
 
 ## reference
 1. [用 Jekyll 和 Github Page 來架設靜態 Markdown 部落格](https://medium.com/@starshunter/%E7%94%A8-jekyll-%E5%92%8C-github-page-%E4%BE%86%E6%9E%B6%E8%A8%AD%E9%9D%9C%E6%85%8B-markdown-%E9%83%A8%E8%90%BD%E6%A0%BC-fcaa288d4dd7)
