@@ -41,7 +41,7 @@ words_per_minute : 200
 author:
   name: "yohe"
   avatar: "/assets/images/anyasmile.gif"
-  bio: "study in NTU csie" # Note: Markdown is allowed
+  bio: "興趣使然草創的blog" # Note: Markdown is allowed
   location: "Taipei or Chunghua, Taiwan"
   
   links:

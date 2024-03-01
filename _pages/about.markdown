@@ -1,12 +1,26 @@
 ---
 layout: single
-title: About
+title: About me
 permalink: /about/
 ---
 
 ## 自介
 
-台灣彰化人，目前是全職學生和1/10的家教老師，興趣使然創了這個blog，但也不知道寫了第一篇文章之後還會不會寫其他篇。
+台灣彰化人，目前是全職學生和1/10的家教老師，興趣使然創了這個blog，但也不知道寫了第一篇文章之後還會不會寫其他篇。  
+目前想寫的項目很多，包含但不限於：
+
+- 前端完善(this blog)
+- 遊戲(minecraft)
+- 遊戲製作(unity)
+- 音樂製作
+- 數學 or 資訊 or 物理 方面知識教學
+- 課程評價
+- 自然科學科普
+- 研究領域科普
+
+## 興趣
+
+爬山、騎單車、音樂、<font color='red'><strike>二次元</strike></font>
 
 ## why yohe
 
@@ -15,7 +29,14 @@ permalink: /about/
 
 ## 經歷
 
-### 2018 ~ 2021
-study in National Changhua Senior High School, **CHSH**
 ### 2021 ~
-study in NTU csie
+正在台大資訊系就讀  
+study in **NTUcsie**
+
+### 2018 ~ 2021
+畢業於國立彰化高級中學  
+graduated from National Changhua Senior High School, **CHSH**
+
+### ~ 2018
+
+![](/assets/images/dio.jpg){: width="400" , .align-center}
