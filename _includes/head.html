@@ -14,7 +14,76 @@
 </script>
 
 <!-- For all browsers -->
-<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+
+<!-- More theme -->
+<link rel="stylesheet alternate" href="{{ '/assets/css/theme2.css' | relative_url }}" id="theme_source_2">
+<link rel="stylesheet alternate" href="{{ '/assets/css/theme3.css' | relative_url }}" id="theme_source_3">
+<link rel="stylesheet alternate" href="{{ '/assets/css/theme4.css' | relative_url }}" id="theme_source_4">
+<link rel="stylesheet alternate" href="{{ '/assets/css/theme5.css' | relative_url }}" id="theme_source_5">
+
+
+<!-- Main theme -->
+<link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" id="theme_source">
+
+
+<script>
+  let theme = sessionStorage.getItem('theme');
+  if(theme === "dark") {
+    sessionStorage.setItem('theme', 'dark');
+    node1 = document.getElementById('theme_source');
+    node2 = document.getElementById('theme_source_2');
+    node3 = document.getElementById('theme_source_3');
+    node4 = document.getElementById('theme_source_4');
+    node5 = document.getElementById('theme_source_5');
+    node1.setAttribute('rel', 'stylesheet alternate'); 
+    node2.setAttribute('rel', 'stylesheet');
+    node3.setAttribute('rel', 'stylesheet alternate'); 
+    node4.setAttribute('rel', 'stylesheet alternate'); 
+    node5.setAttribute('rel', 'stylesheet alternate'); 
+  }
+  else if(theme === "mint") {
+    sessionStorage.setItem('theme', 'mint');
+    node1 = document.getElementById('theme_source');
+    node2 = document.getElementById('theme_source_2');
+    node3 = document.getElementById('theme_source_3');
+    node4 = document.getElementById('theme_source_4');
+    node5 = document.getElementById('theme_source_5');
+    node1.setAttribute('rel', 'stylesheet alternate'); 
+    node2.setAttribute('rel', 'stylesheet alternate');
+    node3.setAttribute('rel', 'stylesheet'); 
+    node4.setAttribute('rel', 'stylesheet alternate'); 
+    node5.setAttribute('rel', 'stylesheet alternate'); 
+  }
+  else if(theme === "plum") {
+    sessionStorage.setItem('theme', 'plum');
+    node1 = document.getElementById('theme_source');
+    node2 = document.getElementById('theme_source_2');
+    node3 = document.getElementById('theme_source_3');
+    node4 = document.getElementById('theme_source_4');
+    node5 = document.getElementById('theme_source_5');
+    node1.setAttribute('rel', 'stylesheet alternate'); 
+    node2.setAttribute('rel', 'stylesheet alternate');
+    node3.setAttribute('rel', 'stylesheet alternate'); 
+    node4.setAttribute('rel', 'stylesheet'); 
+    node5.setAttribute('rel', 'stylesheet alternate'); 
+  }
+  else if(theme === "sunrise") {
+    sessionStorage.setItem('theme', 'sunrise');
+    node1 = document.getElementById('theme_source');
+    node2 = document.getElementById('theme_source_2');
+    node3 = document.getElementById('theme_source_3');
+    node4 = document.getElementById('theme_source_4');
+    node5 = document.getElementById('theme_source_5');
+    node1.setAttribute('rel', 'stylesheet alternate'); 
+    node2.setAttribute('rel', 'stylesheet alternate');
+    node3.setAttribute('rel', 'stylesheet alternate'); 
+    node4.setAttribute('rel', 'stylesheet alternate'); 
+    node5.setAttribute('rel', 'stylesheet'); 
+  }
+  else sessionStorage.setItem('theme', 'aqua');
+</script>
+
+
 <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5/css/all.min.css"></noscript>
 

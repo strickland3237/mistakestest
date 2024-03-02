@@ -23,7 +23,13 @@ remote_theme: "mmistakes/minimal-mistakes@4.24.0"
 plugins:
   - jekyll-feed
   - jekyll-include-cache
+
 minimal_mistakes_skin: "aqua"
+minimal_mistakes_skin_dark: "dark"
+minimal_mistakes_skin_mint: "mint"
+minimal_mistakes_skin_plum: "plum"
+minimal_mistakes_skin_sunrise: "sunrise"
+
 
 locale      : "zh-TW"
 title       : yohe 的個人網站/blog
@@ -36,7 +42,7 @@ baseurl     : "" # the subpath of your site, e.g. /blog
 url         : "" # the base hostname & protocol for your site, e.g. http://example.com
 github: [metadata]
 logo: "/assets/images/yohelogo.png"
-words_per_minute : 200
+words_per_minute : 100
 
 author:
   name: "yohe"

@@ -4,9 +4,12 @@ title:  "透過minimal-mistake在github page上架設blog"
 categories: tutorial
 date:   2024-02-29 00:44:13 +0800
 excerpt: 本篇文會教你從github page套用jekyll的模板到建起minimal-mistake的網站
+words_per_minute: 20
 ---
 
 ## 前言
+
+> 工欲善其事，必先利其器 --- 孔子
 
 前陣子(2022, 好像也不算前陣子)時，我跑去修了**黃鐘揚**教授開的**網路服務程式設計**，這門是個好課，基本上教了許多網頁前後端的技術。過了一年後，偶然看到同系同學在github page上架設屬於自己的部落格，剛好大三下這學期修的課不算多，空閒時間很多。於是就心想不然來自己架設一個部落格好了，由於在架設的過程中不免俗會遇到一些問題，為了讓後人以及後來的自己在改動blog時有一個整理過的筆記，於是在架設部落格時就有了這篇的誕生。
 
@@ -162,62 +165,24 @@ _sass
 assets
 {% endhighlight %}
 #### 6. 本地執行
-執行 `bundle exec jekyll serve` 並確認是否在本地端跑起來了，如果沒有的話輸入以下指令，如果再沒有的話我也不知道該怎麼辦了...<font color='red'><strike>超級不負責任</strike></font>  
+執行
+{% highlight bash %}
+bundle exec jekyll serve
+{% endhighlight %}
+並確認是否在本地端跑起來了，如果沒有的話輸入以下指令，如果再沒有的話我也不知道該怎麼辦了...<font color='red'><strike>超級不負責任</strike></font>  
 {% highlight bash %}
 bundle add webrick
 bundle add wdm
 {% endhighlight %}
 #### 7. 遠端部屬(deploy)
+
 將完成的repo推上去github，並在<your name>.github.io查看是否有成功運行
 
-## 後續處理
+## 結語
 
-後續對於minimal-mistake的一些版面設計基本上都可以在[Minimal Mistakes的官網](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)上找到，我這裡應該也會記錄我改了哪些，畢竟這篇文有一半就是寫給自己看的。
+後續對於minimal-mistake的一些版面設計基本上都可以在[Minimal Mistakes的官網](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)上找到，這篇文主要就是教大家怎麼建一個minimal-mistakes的網頁而已。對於我後續研究如何改一些css的樣式我會再寫另一篇文。[下篇文連結](/tutorial/minimal-mistakes-modify)
 
-### 萬用的_config.yml
 
-### _variable.scss 環境變數設定
-- $xlarge: 由於我的電腦螢幕較寬，因此將此參數從1280px調到1440px比較舒服
-
-### 加上計算各國來訪人數計數器
-
-#### 1. 創建計數器
-到[flagcounter網站](https://flagcounter.com/)客製化自己的計數器並取得圖片網址
-#### 2. 連結網站
-打開_config.yml並在defaults的地方加上以下程式碼
-{% highlight ruby %}
-defaults:
-  - scope:
-      path: ""
-    values:
-      sidebar:
-        - text: <\html copy from previous>
-{% endhighlight %}
-
-#### 3. 設定手機閱讀樣式
-![](/assets/images/uglyflagcounter.png){: .align-center}
-雖然我們設定好了，但是在手機模式下仍然會變得相當醜，如上圖，因此我們要手動將這個計數器在手機模式時關掉。
-首先把原本網站copy的html裡面加上一個類別：
-{% highlight html %}
-<a class='author__flagcounter'></a>
-{% endhighlight %}
-這個類別的名稱是我自訂的。接著打開_sidebar.scss檔，在最下面加上
-{% highlight css %}
-/*
-    flag__counter
-    ========================== */
-
-.author__flagcounter{
-  display:none;
-  @include breakpoint($large){
-    display:block
-  }
-}
-{% endhighlight %}
-這樣就可以讓計數器在手機模式時消失了。
-### 加上favicon
-到[這個網站](https://realfavicongenerator.net/)將想做的圖片丟進去，之後按照上面的步驟應該會有一個favicon包與一串html程式碼。
-將這些程式碼丟到`_includes/head/custom.html`並將圖片放在合適的位置即可。
 
 ## reference
 1. [用 Jekyll 和 Github Page 來架設靜態 Markdown 部落格](https://medium.com/@starshunter/%E7%94%A8-jekyll-%E5%92%8C-github-page-%E4%BE%86%E6%9E%B6%E8%A8%AD%E9%9D%9C%E6%85%8B-markdown-%E9%83%A8%E8%90%BD%E6%A0%BC-fcaa288d4dd7)
