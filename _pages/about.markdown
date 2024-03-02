@@ -30,8 +30,8 @@ permalink: /about/
 ## 經歷
 
 ### 2021 ~
-正在台大資訊系就讀  
-study in **NTUcsie**
+
+![](/assets/images/dio.jpg){: width="400" , .align-center}
 
 ### 2018 ~ 2021
 畢業於國立彰化高級中學  
