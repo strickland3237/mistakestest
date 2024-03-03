@@ -4,7 +4,6 @@ title:  "客製化自己的minimal-mistake網頁(持續更新中)"
 categories: tutorial
 date:   2024-03-02 00:44:13 +0800
 excerpt: 本篇文會教你更改一些minimal-mistakes的一些type(持續更新中)
-words_per_minute: 30
 ---
 
 我這裡應該也會記錄我改了哪些，畢竟這篇文有一半就是寫給自己看的。

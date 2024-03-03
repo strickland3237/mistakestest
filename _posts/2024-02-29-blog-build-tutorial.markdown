@@ -4,7 +4,6 @@ title:  "透過minimal-mistake在github page上架設blog"
 categories: tutorial
 date:   2024-02-29 00:44:13 +0800
 excerpt: 本篇文會教你從github page套用jekyll的模板到建起minimal-mistake的網站
-words_per_minute: 20
 ---
 
 ## 前言

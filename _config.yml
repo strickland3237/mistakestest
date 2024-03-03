@@ -42,7 +42,7 @@ baseurl     : "" # the subpath of your site, e.g. /blog
 url         : "" # the base hostname & protocol for your site, e.g. http://example.com
 github: [metadata]
 logo: "/assets/images/yohelogo.png"
-words_per_minute : 100
+words_per_minute : 350
 
 author:
   name: "yohe"
