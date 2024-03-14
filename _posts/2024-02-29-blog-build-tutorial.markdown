@@ -188,3 +188,4 @@ bundle add wdm
 2. [透過 Jekyll 與 GitHub Pages 建立自己的部落格(2)](https://ktinglee.github.io/install-my-blog(2)/)
 3. [一碰minimal-mistakes就上手](https://kodeworker.github.io/%E6%95%99%E5%AD%B8/%E4%B8%80%E7%A2%B0minimal-mistakes%E5%B0%B1%E4%B8%8A%E6%89%8B/)
 4. [Minimal Mistakes tutorial](https://mmistakes.github.io/minimal-mistakes/docs/quick-start-guide/)
+5. [Jekyll serve fails on Ruby 3.0](https://github.com/jekyll/jekyll/issues/8523)

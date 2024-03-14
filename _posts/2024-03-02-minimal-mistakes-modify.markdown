@@ -53,3 +53,6 @@ defaults:
 到[這個網站](https://realfavicongenerator.net/)將想做的圖片丟進去，之後按照上面的步驟應該會有一個favicon包與一串html程式碼。
 將這些程式碼丟到`_includes/head/custom.html`並將圖片放在合適的位置即可。
 
+### 修改字數計算錯誤問題
+[link](https://zhuanlan.zhihu.com/p/433233271)
+
