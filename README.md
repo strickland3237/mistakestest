@@ -1,4 +1,3 @@
 # introduction
-<img src='/assets/images/yohelogo.png' align='center'/>
-<a href='https://yohe-tw.github.io/' align='center'>web 網站連結</a>
-
+<img src='/assets/images/strickland.png' align='center'/>
+<a href='https://strickland3237.github.io/' align='center'>web 网站</a>

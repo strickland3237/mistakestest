@@ -32,39 +32,39 @@ minimal_mistakes_skin_sunrise: "sunrise"
 
 
 locale      : "zh"
-title       : yohe 的個人網站/blog
+title       : strickland
 subtitle    : enjoying college life~
 name        : "yohe"
-email       : j00968361@gmail.com
+email       : strickland3237@gmail.com
 description : >- # this means to ignore newlines until "baseurl:"
-  這裡是yohe的個人網站
+  还没想好写什么
 baseurl     : "" # the subpath of your site, e.g. /blog
 url         : "" # the base hostname & protocol for your site, e.g. http://example.com
 github: [metadata]
-logo: "/assets/images/yohelogo.png"
+logo: "/assets/images/strickland.png"
 words_per_minute : 350
 
 author:
-  name: "yohe"
-  avatar: "/assets/images/anyasmile.gif"
-  bio: "興趣使然草創的blog" # Note: Markdown is allowed
-  location: "Taipei or Chunghua, Taiwan"
+  name: "strickland"
+  avatar: "/assets/images/avatar.jpg"
+  bio: "还没想好写什么" # Note: Markdown is allowed
+  location: "Chengdu"
   
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yohe-tw"
+      url: "https://github.com/strickland3237"
     - label: "GitHub repository"
       icon: "fas fa-fw fa-book"
-      url: "https://github.com/yohe-tw/yohe-tw.github.io"
+      url: "https://github.com/strickland3237/strickland3237.github.io"
 footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/yohe-tw"
+      url: "https://github.com/strickland3237"
     - label: "GitHub repository"
       icon: "fas fa-fw fa-book"
-      url: "https://github.com/yohe-tw/yohe-tw.github.io"
+      url: "https://github.com/strickland3237/strickland3237.github.io"
 
 
 
