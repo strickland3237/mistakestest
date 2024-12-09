@@ -4,7 +4,8 @@ permalink: /
 author_profile: true
 ---
 
-![](/assets/images/yohelogo.png){: .align-center}
+这里是主页
+<!-- ![](/assets/images/yohelogo.png){: .align-center}
 just a picture drawn in three minites by ipad air 4
-{: .text-center}
+{: .text-center} -->
 
