@@ -4,13 +4,13 @@ main:
   #   url: /I-have-told-you-not-to-click-this-button/
   - title: "archive"
     url: /year-archive/
-  - title: "Change Theme"
+  - title: "theme"
     url: /change-theme/
   - title: "categories"
     url: /categories/
-  - title: "About me"
+  - title: "about me"
     url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "Sitemap"
+  - title: "sitemap"
     url: /sitemap/
