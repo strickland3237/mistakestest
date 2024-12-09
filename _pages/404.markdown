@@ -3,7 +3,7 @@ permalink: /404.html
 layout: default
 ---
 
-<img src="/assets/images/aquacry.gif" width = "404" />{: .align-center}
+<img src="/assets/images/cry.gif" width = "404" />{: .align-center}
 
 <p style="font-size:100px; margin:5px; font-weight: 900">404</p>{: .text-center}
-<p style="font-size:30px; margin:5px">not fun... 不好玩...</p>{: .text-center}
+<p style="font-size:30px; margin:5px">不好玩...</p>{: .text-center}

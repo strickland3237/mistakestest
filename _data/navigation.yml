@@ -6,11 +6,11 @@ main:
     url: /year-archive/
   - title: "theme"
     url: /change-theme/
-  - title: "categories"
-    url: /categories/
+  # - title: "categories"
+  #   url: /categories/
   - title: "about me"
     url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
-  - title: "sitemap"
-    url: /sitemap/
+  # - title: "sitemap"
+  #   url: /sitemap/
