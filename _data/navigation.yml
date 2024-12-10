@@ -2,6 +2,8 @@
 main:
   # - title: "Don't click this bottom"
   #   url: /I-have-told-you-not-to-click-this-button/
+  - title: "home"
+    url: /
   - title: "archive"
     url: /year-archive/
   - title: "theme"
