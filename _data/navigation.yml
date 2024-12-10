@@ -8,8 +8,8 @@ main:
     url: /change-theme/
   # - title: "categories"
   #   url: /categories/
-  - title: "about me"
-    url: /about/
+  # - title: "about me"
+  #   url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "sitemap"
