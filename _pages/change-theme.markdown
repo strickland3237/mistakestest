@@ -1,5 +1,5 @@
 ---
-title: "切换主题"
+title: "switch"
 layout: single
 permalink: /change-theme/
 ---

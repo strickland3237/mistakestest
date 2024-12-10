@@ -2,16 +2,16 @@
 main:
   # - title: "Don't click this bottom"
   #   url: /I-have-told-you-not-to-click-this-button/
-  - title: "主页"
+  - title: "home"
     url: /
-  - title: "归档"
+  - title: "archive"
     url: /year-archive/
-  - title: "主题"
+  - title: "theme"
     url: /change-theme/
   # - title: "categories"
   #   url: /categories/
-  # - title: "about me"
-  #   url: /about/
+  - title: "about"
+    url: /about/
   # - title: "Sample Collections"
   #   url: /collection-archive/
   # - title: "sitemap"
