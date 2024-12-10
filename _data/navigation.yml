@@ -4,7 +4,7 @@ main:
   #   url: /I-have-told-you-not-to-click-this-button/
   - title: "home"
     url: /
-  - title: "archive"
+  - title: "blog"
     url: /year-archive/
   - title: "theme"
     url: /change-theme/
