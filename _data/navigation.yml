@@ -2,11 +2,11 @@
 main:
   # - title: "Don't click this bottom"
   #   url: /I-have-told-you-not-to-click-this-button/
-  - title: "home"
+  - title: "主页"
     url: /
-  - title: "blog"
+  - title: "归档"
     url: /year-archive/
-  - title: "theme"
+  - title: "主题"
     url: /change-theme/
   # - title: "categories"
   #   url: /categories/
